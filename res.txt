@@ -1,0 +1,167 @@
+--- Starting Model Evaluation ---
+Data loaded successfully from gLM2_650M_embed_embeddings.pkl
+Train data shape: Embeddings (512, 512), Labels (512,)
+Test data shape: Embeddings (128, 512), Labels (128,)
+
+--- Training and Evaluating: Logistic Regression ---
+Training...
+Predicting...
+Results for Logistic Regression:
+  Accuracy: 0.6172
+  Macro F1-Score: 0.5518
+
+--- Training and Evaluating: Support Vector Machine ---
+Training...
+Predicting...
+Results for Support Vector Machine:
+  Accuracy: 0.5312
+  Macro F1-Score: 0.4680
+
+--- Training and Evaluating: Random Forest ---
+Training...
+Predicting...
+Results for Random Forest:
+  Accuracy: 0.5312
+  Macro F1-Score: 0.4606
+
+--- Training and Evaluating: K-Nearest Neighbors ---
+Training...
+Predicting...
+Results for K-Nearest Neighbors:
+  Accuracy: 0.4453
+  Macro F1-Score: 0.3753
+
+--- Training and Evaluating: MLP Classifier ---
+Training...
+Predicting...
+Results for MLP Classifier:
+  Accuracy: 0.5234
+  Macro F1-Score: 0.4538
+
+--- Evaluation Finished ---
+
+--- Starting Model Evaluation ---
+Data loaded successfully from progen2-xlarge.pkl
+Train data shape: Embeddings (410, 4096), Labels (410,)
+Test data shape: Embeddings (86, 4096), Labels (86,)
+
+--- Training and Evaluating: Logistic Regression ---
+Training...
+Predicting...
+Results for Logistic Regression:
+  Accuracy: 0.2907
+  Macro F1-Score: 0.2194
+
+--- Training and Evaluating: Random Forest ---
+Training...
+Predicting...
+Results for Random Forest:
+  Accuracy: 0.1860
+  Macro F1-Score: 0.1146
+
+--- Training and Evaluating: K-Nearest Neighbors ---
+Training...
+Predicting...
+Results for K-Nearest Neighbors:
+  Accuracy: 0.0581
+  Macro F1-Score: 0.0404
+
+--- Training and Evaluating: MLP Classifier ---
+Training...
+Predicting...
+Results for MLP Classifier:
+  Accuracy: 0.0116
+  Macro F1-Score: 0.0003
+
+--- Evaluation Finished ---
+
+--- Training and Evaluating: Logistic Regression ---
+Training...
+Predicting...
+Results for Logistic Regression:
+  Accuracy: 0.1250
+  Macro F1-Score: 0.0966
+
+--- Training and Evaluating: Random Forest ---
+Training...
+Predicting...
+Results for Random Forest:
+  Accuracy: 0.0234
+  Macro F1-Score: 0.0182
+
+--- Training and Evaluating: K-Nearest Neighbors ---
+Training...
+Predicting...
+Results for K-Nearest Neighbors:
+  Accuracy: 0.0078
+  Macro F1-Score: 0.0002
+
+--- Training and Evaluating: MLP Classifier ---
+Training...
+Predicting...
+Results for MLP Classifier:
+  Accuracy: 0.0078
+  Macro F1-Score: 0.0052
+
+--- Evaluation Finished ---
+
+
+--- Training and Evaluating: Logistic Regression ---
+Training...
+Predicting...
+Results for Logistic Regression:
+  Accuracy: 0.0391
+  Macro F1-Score: 0.0255
+
+--- Training and Evaluating: Random Forest ---
+Training...
+Predicting...
+Results for Random Forest:
+  Accuracy: 0.0234
+  Macro F1-Score: 0.0148
+
+--- Training and Evaluating: K-Nearest Neighbors ---
+Training...
+Predicting...
+Results for K-Nearest Neighbors:
+  Accuracy: 0.0078
+  Macro F1-Score: 0.0078
+
+--- Training and Evaluating: MLP Classifier ---
+Training...
+Predicting...
+Results for MLP Classifier:
+  Accuracy: 0.0078
+  Macro F1-Score: 0.0078
+
+--- Evaluation Finished ---
+
+--- Training and Evaluating: Logistic Regression ---
+Training...
+Predicting...
+Results for Logistic Regression:
+  Accuracy: 0.0391
+  Macro F1-Score: 0.0218
+
+--- Training and Evaluating: Random Forest ---
+Training...
+Predicting...
+Results for Random Forest:
+  Accuracy: 0.0312
+  Macro F1-Score: 0.0174
+
+--- Training and Evaluating: K-Nearest Neighbors ---
+Training...
+Predicting...
+Results for K-Nearest Neighbors:
+  Accuracy: 0.0547
+  Macro F1-Score: 0.0302
+
+--- Training and Evaluating: MLP Classifier ---
+Training...
+Predicting...
+Results for MLP Classifier:
+  Accuracy: 0.0078
+  Macro F1-Score: 0.0039
+
+--- Evaluation Finished ---
