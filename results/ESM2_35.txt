@@ -1,0 +1,16 @@
+Model Evaluation Results
+Logistic Regression:
+  Top-1 Accuracy: 0.469
+  Macro F1-Score: 0.409
+  Top-5 Accuracy: 0.664
+
+Random Forest:
+  Top-1 Accuracy: 0.375
+  Macro F1-Score: 0.288
+  Top-5 Accuracy: 0.570
+
+MLP Classifier:
+  Top-1 Accuracy: 0.266
+  Macro F1-Score: 0.218
+  Top-5 Accuracy: 0.539
+
