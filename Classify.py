@@ -19,14 +19,16 @@ if __name__ == "__main__":
     analyze("data/PRG2_l.pkl","results/PRG2_l.txt")
     analyze("data/PRG2_m.pkl","results/PRG2_m.txt")
     analyze("data/PRG2_s.pkl","results/PRG2_s.txt")
-
+    '''
+    
     analyze("data/GLM2_150.pkl","results/GLM2_150.txt")
     analyze("data/GLM2_650.pkl","results/GLM2_650.txt")
     analyze("data/GLM2_650e.pkl","results/GLM2_650e.txt")
     
+    
+    '''
     analyze("data/KM.pkl","results/KM.txt")
     analyze("data/IEV.pkl","results/IEV.txt")
-    '''
     analyze("data/OHV.pkl","results/OHV.txt")
-    
+    '''
     

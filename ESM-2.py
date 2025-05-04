@@ -42,11 +42,13 @@ def embed(model, tokenizer, seqs):
                     padding="longest", 
                     return_tensors="pt", 
                     max_length=max_len).to(device)
+    ids = enc.input_ids.to(device)
+    mask = enc.attention_mask.to(device)
     with torch.no_grad(): 
         h = model(**enc).last_hidden_state
-    mask = enc.attention_mask.unsqueeze(-1).expand_as(h).float()
-    emb = (h * mask).sum(1) / (mask.sum(1) + 1e-9)
-    return emb.cpu()
+    me = mask.unsqueeze(-1).expand_as(h).float()
+    ret = (h * me).sum(1) / (me.sum(1) + 1e-9)
+    return ret.cpu()
 
 def proc(ds, model, tokenizer, mp):
     out = {}

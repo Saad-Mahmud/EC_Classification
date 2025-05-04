@@ -40,7 +40,7 @@ def embed_e(model, tokenizer, seqs):
     return out.pooler_output.cpu()
 
 def embed_b(model, tokenizer, seqs):
-    enc = tokenizer(seqs, 
+    enc = tokenizer([f"<+>{t}" for t in seqs], 
                     truncation=True, 
                     padding=True, 
                     return_tensors="pt", 

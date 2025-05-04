@@ -16,9 +16,9 @@ results = {
     },
     "gLM-2": {
         "sizes":   [150, 650],
-        "accuracy":[0.45, 0.62],
-        "f1":      [0.40, 0.55],
-        "top5":    [0.66, 0.80],
+        "accuracy":[0.34, 0.62],
+        "f1":      [0.30, 0.55],
+        "top5":    [0.64, 0.80],
     },
 }
 # ────────────────────────────────────────────
@@ -27,18 +27,14 @@ for family, m in results.items():
     fig, ax = plt.subplots(figsize=(6,4))
 
     ax.plot(m["sizes"], m["accuracy"], marker="o", label="Accuracy")
-    ax.plot(m["sizes"], m["f1"],       marker="s", label="Macro F1")
-    ax.plot(m["sizes"], m["top5"],     marker="^", label="Top-5 Acc.")
+    ax.plot(m["sizes"], m["f1"],marker="s", label="Macro F1")
+    ax.plot(m["sizes"], m["top5"],marker="^", label="Top-5 Acc.")
 
     ax.set_xscale("log")
     ax.set_xticks(m["sizes"])
     
-    ax.xaxis.set_major_formatter(
-        FuncFormatter(lambda val, pos: f"{int(val)}")
-    )
-    ax.xaxis.set_minor_formatter(
-        FuncFormatter(lambda val, pos: f"")
-    )
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda val, pos: f"{int(val)}"))
+    ax.xaxis.set_minor_formatter(FuncFormatter(lambda val, pos: f""))
 
     ax.set_ylim(0.2, 0.85)
     ax.set_xlabel("Model Size (Million Parameters, Log-Scale)", fontsize=16)
