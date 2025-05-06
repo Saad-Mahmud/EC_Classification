@@ -1,8 +1,12 @@
 import pickle, os, sys
 import numpy as np
 
-INPUTS = ["data/KM_pca.pkl", "data/IEV_pca.pkl"]
-OUTPUT = "data/KM+IEV.pkl"
+INPUTS = ["data/GLM2_650e.pkl", "data/ESM2_3B.pkl", 
+          "data/GLM2_650e.pkl", "data/ESM2_3B.pkl",
+          "data/GLM2_650e.pkl", "data/ESM2_3B.pkl",
+          "data/GLM2_650e.pkl", "data/ESM2_3B.pkl",
+          "data/GLM2_650e.pkl", "data/ESM2_3B.pkl",]
+OUTPUT = "data/GLM2_ESM2_X5.pkl"
 
 def load(f):
     d = pickle.load(open(f, "rb"))

@@ -8,16 +8,18 @@ model_id = ["facebook/esm2_t6_8M_UR50D",
             "facebook/esm2_t12_35M_UR50D",
             "facebook/esm2_t30_150M_UR50D",
             "facebook/esm2_t33_650M_UR50D",
-            "facebook/esm2_t36_3B_UR50D"]
+            "facebook/esm2_t36_3B_UR50D",
+            "facebook/esm2_t48_15B_UR50D"]
 out_file = ["data/ESM2_8.pkl",
             "data/ESM2_35.pkl",
             "data/ESM2_150.pkl",
             "data/ESM2_650.pkl",
-            "data/ESM2_3B.pkl",]
+            "data/ESM2_3B.pkl",
+            "data/ESM2_15B.pkl",]
 bs = 1
 max_len = 5120
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 dtype = torch.bfloat16 if device.type == "cuda" else torch.float32
 print("Device:", device, "dtype:", dtype)
 
@@ -67,7 +69,8 @@ def proc(ds, model, tokenizer, mp):
     return out
 
 def main():
-    for i in range(5):
+    for i in range(5,6):
+        print(model_id[i])
         ds, mp = load_data(dataset_name)
         model, tokenizer = get_model(model_id[i], dtype)
         res = proc(ds, model, tokenizer, mp)
