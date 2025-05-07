@@ -2,11 +2,11 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
-IN_PKL  = ["data/OHV.pkl","data/IEV.pkl", "data/KM.pkl"]
-OUT_PKL = ["data/OHV_pca.pkl","data/IEV_pca.pkl", "data/KM_pca.pkl"]
+IN_PKL  = ["data/OHV.pkl","data/IEV.pkl", "data/KM.pkl", "data/PROFEAT.pkl"]
+OUT_PKL = ["data/OHV_pca.pkl","data/IEV_pca.pkl", "data/KM_pca.pkl", "data/PROFEAT_pca.pkl"]
 N_COMP  = 512
 
-for i in range(len(IN_PKL)):
+for i in range(3,len(IN_PKL)):
     with open(IN_PKL[i], "rb") as f:
         d = pickle.load(f)
     X_tr, y_tr = d["train_embeddings"], d["train_labels"]

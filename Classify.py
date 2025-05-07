@@ -2,7 +2,7 @@ from ML import analyze
 
 
 if __name__ == "__main__":
-    analyze("data/ESM2_3B.pkl","results/temp.txt")
+    analyze("data/IE_KM_PRO_pca.pkl","results/IE_KM_PRO_pca.txt")
     '''
     analyze("data/OHV_pca.pkl","results/OHV_pca.txt")
     analyze("data/IEV_pca.pkl","results/IEV_pca.txt")
